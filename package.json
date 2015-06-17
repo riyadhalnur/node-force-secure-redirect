@@ -1,0 +1,41 @@
+{
+  "name": "node-force-secure-redirect",
+  "version": "0.1.0",
+  "description": "Force all incoming HTTP connections to be redirected to secure (HTTPS) version of your express app",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/riyadhalnur/node-force-secure-redirect.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "middleware",
+    "secure",
+    "http",
+    "https",
+    "redirect",
+    "enforce",
+    "force",
+    "security"
+  ],
+  "author": "Riyadh Al Nur <riyadhalnur@verticalaxisbd.com> (https://github.com/riyadhalnur)",
+  "license": "GPL v3",
+  "bugs": {
+    "url": "https://github.com/riyadhalnur/node-force-secure-redirect/issues"
+  },
+  "homepage": "https://github.com/riyadhalnur/node-force-secure-redirect",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~2.2.5",
+    "should": "*",
+    "express": "~4.9.4",
+    "supertest": "~1.0.1"
+  }
+}
