@@ -3,8 +3,6 @@
 # node-force-secure-redirect
 Force all incoming HTTP connections to be redirected to secure (HTTPS) version of your express app  
 
-By default, it won't force SSL in your development environment.  
-
 ## Install  
 `npm install node-force-secure-redirect --save`  
 
@@ -17,7 +15,7 @@ app.use(forceHTTPS());
 ```  
 
 ## Tests  
-`NODE_ENV=testing npm test`  
+`npm test`  
 
 ## License  
 Licensed under [GPL v3](http://www.gnu.org/licenses/gpl-3.0.txt)  
