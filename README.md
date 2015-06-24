@@ -13,7 +13,7 @@ var forceHTTPS = require('node-force-secure-redirect');
 
 app.use(forceHTTPS('environment'));  
 ```  
-where the environment *parameter* (string or array of strings) is optional. If no enviroment string is passed in, HTTPS will be enforced across all enviroments.
+where the environment *parameter* (string or array of strings) are the environment for which you want to enforce SSL on. If no enviroment string is passed in, HTTPS will not be enforced on any enviroment.
 
 ## Tests  
 `NODE_ENV=testing npm test`  
