@@ -12,7 +12,7 @@ describe('Force SSL redirect', function () {
   beforeEach(function () {
     app = express();
 
-    app.use(forceHTTPS());
+    app.use(forceHTTPS('testing'));
 
     app.get('/', function (req, res) {
       res.send('Hello World!');

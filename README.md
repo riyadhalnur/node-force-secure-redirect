@@ -11,8 +11,9 @@ Force all incoming HTTP connections to be redirected to secure (HTTPS) version o
 var forceHTTPS = require('node-force-secure-redirect');  
 ...  
 
-app.use(forceHTTPS());  
+app.use(forceHTTPS('environment'));  
 ```  
+where the environment *parameter* is optional. If no enviroment string is passed in, HTTPS will be enforced across all enviroments.
 
 ## Tests  
 `npm test`  
