@@ -6,7 +6,7 @@ module.exports = function (environment) {
   environment = environment || [];
 
   return function (req, res, next) {
-    if (!req.secure) {
+    if (!req.secure && (req.get('X-Forwarded-Proto') !== 'https')) {
       if (environment && typeof environment === 'string' && environment === env) {
         res.redirect(301, 'https://' + req.host + req.url);
       } else if (environment && Array.isArray(environment) && environment.length && environment.indexOf(env) !== -1) {
