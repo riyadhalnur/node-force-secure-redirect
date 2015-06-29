@@ -1,6 +1,6 @@
 {
   "name": "node-force-secure-redirect",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Force all incoming HTTP connections to be redirected to secure (HTTPS) version of your express app",
   "main": "index.js",
   "scripts": {

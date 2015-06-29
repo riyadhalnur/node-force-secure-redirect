@@ -24,6 +24,7 @@ describe('Force SSL redirect', function () {
   it('should redirect HTTP requests', function (done) {
     request(app)
       .get('/')
+      .set('X-Forwarded-Proto', 'http')
       .expect(301)
       .end(function (err, res) {
         should.not.exist(err);
