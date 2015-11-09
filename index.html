@@ -5,7 +5,7 @@
     <title>Node-force-secure-redirect by riyadhalnur</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
@@ -26,7 +26,7 @@
 
 <p>Force all incoming HTTP connections to be redirected to secure (HTTPS) version of your express app.  </p>
 
-<p>Works for node apps directly behind an Amazon ELB (Elastic Load Balancer). </p>
+<p>Works for node apps directly behind an Amazon ELB (Elastic Load Balancer).</p>
 
 <h2>
 <a id="install" class="anchor" href="#install" aria-hidden="true"><span class="octicon octicon-link"></span></a>Install</h2>
@@ -36,14 +36,14 @@
 <h2>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<div class="highlight highlight-js"><pre><span class="pl-k">var</span> forceHTTPS <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>node-force-secure-redirect<span class="pl-pds">'</span></span>);  
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> forceHTTPS <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>node-force-secure-redirect<span class="pl-pds">'</span></span>);  
 ...  
 ...
 ...
 app.set(<span class="pl-s"><span class="pl-pds">'</span>trust proxy<span class="pl-pds">'</span></span>); <span class="pl-c">// this is important when your app is behind an ELB</span>
 app.use(forceHTTPS(<span class="pl-s"><span class="pl-pds">'</span>environment<span class="pl-pds">'</span></span>));  </pre></div>
 
-<p>where the environment <em>parameter</em> (string or array of strings) are the environment for which you want to enforce SSL on. If no enviroment string is passed in, HTTPS will not be enforced on any enviroment.</p>
+<p>where the environment <em>parameter</em> (string or array of strings) are the environment for which you want to enforce SSL on. If no environment string is passed in, HTTPS will not be enforced on any environment.</p>
 
 <h2>
 <a id="tests" class="anchor" href="#tests" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tests</h2>
@@ -71,4 +71,3 @@ app.use(forceHTTPS(<span class="pl-s"><span class="pl-pds">'</span>environment<s
   
   </body>
 </html>
-
