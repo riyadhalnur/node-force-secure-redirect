@@ -33,9 +33,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "~2.2.5",
+    "mocha": "~3.3.0",
     "should": "*",
-    "express": "~4.9.4",
-    "supertest": "~1.0.1"
+    "express": "~4.15.2",
+    "supertest": "~3.0.0"
   }
 }
