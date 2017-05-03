@@ -1,6 +1,8 @@
 [![Build Status](https://travis-ci.org/riyadhalnur/node-force-secure-redirect.svg?branch=master)](https://travis-ci.org/riyadhalnur/node-force-secure-redirect)  
 
 # node-force-secure-redirect
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/riyadhalnur/node-force-secure-redirect.svg)](https://greenkeeper.io/)
 Force all incoming HTTP connections to be redirected to secure (HTTPS) version of your express app.  
 
 Works for node apps directly behind an Amazon ELB (Elastic Load Balancer).
